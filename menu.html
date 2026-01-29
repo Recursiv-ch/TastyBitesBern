@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TastyBites Speisekarte - Entdecke unsere saftigen Smashed Burgers, knusprigen Pommes und erfrischenden Getränke.">
+  <title>Speisekarte | TastyBites Bern</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="TastyBites.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Tasty<span>Bites</span></a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="menu.html" class="nav__link active">Speisekarte</a></li>
+          <li><a href="about.html" class="nav__link">Über uns</a></li>
+          <li><a href="contact.html" class="nav__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li class="mobile-nav__item"><a href="menu.html" class="mobile-nav__link">Speisekarte</a></li>
+      <li class="mobile-nav__item"><a href="about.html" class="mobile-nav__link">Über uns</a></li>
+      <li class="mobile-nav__item"><a href="contact.html" class="mobile-nav__link">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="page-hero section--dark">
+      <div class="container">
+        <h1 class="page-hero__title fade-in">Speisekarte</h1>
+        <p class="page-hero__subtitle fade-in">
+          Alle unsere Burger Menüs werden mit knusprigen Pommes Frites und hausgemachter Sauce serviert.
+        </p>
+      </div>
+    </section>
+
+    <!-- Burger Menu Section -->
+    <section class="section menu">
+      <div class="container">
+        <header class="menu__header fade-in">
+          <span class="menu__label">Hauptgerichte</span>
+          <h2>Burger Menüs</h2>
+        </header>
+
+        <div class="menu__grid">
+          <article class="menu-item stagger-item" data-category="burger">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Habibi Burger</h3>
+              <p class="menu-item__description">Smashed Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Cheddar, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">24,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item" data-category="burger">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Juicy Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, grillierte Zwiebeln, Bacon, Röstzwiebeln, 2× Cheddar, Tasty-Mayo</p>
+            </div>
+            <span class="menu-item__price">26,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item" data-category="burger veggie">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">
+                Tasty Veggie Burger
+                <span class="menu-item__badge menu-item__badge--veggie" aria-label="vegetarisch"></span>
+              </h3>
+              <p class="menu-item__description">Vegi-Patty, Salat, Tomaten, Zwiebeln, Gewürzgurken, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">21,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item" data-category="burger">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Cheese Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Zwiebeln, Gewürzgurken, Cheddar, Ketchup, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">23,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item" data-category="burger">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Bacon Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Zwiebeln, Gewürzgurken, Cheddar, Bacon, Röstzwiebeln, Ketchup, BBQ-Sauce</p>
+            </div>
+            <span class="menu-item__price">25,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item" data-category="burger">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Classic Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Gewürzgurken, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">24,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item" data-category="burger spicy">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">
+                Tasty Spicy Burger
+                <span class="menu-item__badge menu-item__badge--spicy" aria-label="scharf"></span>
+              </h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Jalapeños, Cheddar, Chili-Mayo, Chilisauce</p>
+            </div>
+            <span class="menu-item__price">24,90 CHF</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="section section--dark">
+      <div class="container">
+        <header class="menu__header fade-in">
+          <span class="menu__label">Getränke</span>
+          <h2>Alkoholfreie Getränke</h2>
+        </header>
+
+        <div class="drinks-grid">
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Coca-Cola</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Coca-Cola Zero</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Fanta Orange</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Sprite</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Pepsi</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Fusetea Peach</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Fusetea Lemon</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Uludag Grün</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Uludag Orange</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Valser Prickelnd</span>
+              <span class="drink-item__size">0,5l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Wasser Still</span>
+              <span class="drink-item__size">0,5l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Mate</span>
+              <span class="drink-item__size">0,25l</span>
+            </div>
+            <span class="drink-item__price">4,00 CHF</span>
+          </article>
+
+          <article class="drink-item stagger-item">
+            <div>
+              <span class="drink-item__name">Red Bull</span>
+              <span class="drink-item__size">0,33l</span>
+            </div>
+            <span class="drink-item__price">5,00 CHF</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2 class="cta__title fade-in">Bereit zu bestellen?</h2>
+        <p class="cta__subtitle fade-in">
+          Reserviere einen Tisch oder komm einfach vorbei!
+        </p>
+        <div class="cta__buttons fade-in">
+          <a href="contact.html" class="btn btn--primary btn--large">Tisch reservieren</a>
+          <a href="tel:+41312221234" class="btn btn--secondary btn--large">Anrufen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Tasty<span>Bites</span></div>
+          <p class="footer__tagline">Smashed to Perfection – Burger wie sie sein sollten.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/tastybites.bern" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/tastybites.bern" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Speisekarte</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Kontakt</h4>
+          <ul class="footer__links">
+            <li>Murtenstrasse 66</li>
+            <li>3008 Bern</li>
+            <li><a href="tel:+41312221234">+41 31 398 11 22</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Öffnungszeiten</h4>
+          <ul class="footer__links">
+            <li>Di-Fr: 11:30-14:00</li>
+            <li>Di-Fr: 18:00-23:00</li>
+            <li>Sa: 18:00-23:00</li>
+            <li>So-Mo: Ruhetag</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear"></span> TastyBites Bern. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="impressum.html#datenschutz">Datenschutz</a>
+        </div>
+        <p class="footer__credit">Made by <a href="https://recursiv.ch" target="_blank" rel="noopener">Recursiv</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

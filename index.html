@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TastyBites Bern - Smashed Burgers wie sie sein sollten. Saftige Patties, hausgemachte Saucen und knusprige Pommes im Herzen von Bern.">
+  <title>TastyBites Bern | Smashed to Perfection</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="TastyBites.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Tasty<span>Bites</span></a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active">Home</a></li>
+          <li><a href="menu.html" class="nav__link">Speisekarte</a></li>
+          <li><a href="about.html" class="nav__link">Über uns</a></li>
+          <li><a href="contact.html" class="nav__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li class="mobile-nav__item"><a href="menu.html" class="mobile-nav__link">Speisekarte</a></li>
+      <li class="mobile-nav__item"><a href="about.html" class="mobile-nav__link">Über uns</a></li>
+      <li class="mobile-nav__item"><a href="contact.html" class="mobile-nav__link">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=80"
+          alt="Saftiger Smashed Burger mit geschmolzenem Käse"
+          class="hero__bg-image"
+          loading="eager"
+        >
+      </div>
+
+      <div class="container hero__content fade-in">
+        <span class="hero__tagline">Bern's beste Burgers</span>
+        <h1 class="hero__title">
+          Smashed
+          <span>to Perfection</span>
+        </h1>
+        <p class="hero__subtitle">
+          Saftige Patties, knusprige Pommes und unsere legendäre Tasty Sauce –
+          alles frisch zubereitet, mit Liebe gemacht.
+        </p>
+        <div class="hero__cta">
+          <a href="menu.html" class="btn btn--primary btn--large">Menü entdecken</a>
+          <a href="contact.html" class="btn btn--secondary btn--large">Reservieren</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Burgers Section -->
+    <section class="section signature">
+      <div class="container">
+        <header class="signature__header fade-in">
+          <span class="signature__label">Fan-Favoriten</span>
+          <h2>Unsere Signature Burgers</h2>
+          <p>Die drei Burger, die unsere Kunden lieben.</p>
+        </header>
+
+        <div class="signature__grid">
+          <!-- Tasty Habibi -->
+          <article class="burger-card stagger-item">
+            <div class="burger-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&q=80"
+                alt="Tasty Habibi Burger mit Cheddar und frischem Gemüse"
+                loading="lazy"
+              >
+              <span class="burger-card__badge">Bestseller</span>
+            </div>
+            <div class="burger-card__content">
+              <h3 class="burger-card__name">Tasty Habibi</h3>
+              <p class="burger-card__description">
+                Smashed Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Cheddar, Tasty Sauce
+              </p>
+              <div class="burger-card__footer">
+                <span class="burger-card__price">24,90 CHF</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tasty Juicy -->
+          <article class="burger-card stagger-item">
+            <div class="burger-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&q=80"
+                alt="Tasty Juicy Burger mit doppelt Käse und Bacon"
+                loading="lazy"
+              >
+            </div>
+            <div class="burger-card__content">
+              <h3 class="burger-card__name">Tasty Juicy</h3>
+              <p class="burger-card__description">
+                Rindfleisch-Patty, grillierte Zwiebeln, Bacon, Röstzwiebeln, 2× Cheddar, Tasty-Mayo
+              </p>
+              <div class="burger-card__footer">
+                <span class="burger-card__price">26,90 CHF</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tasty Spicy -->
+          <article class="burger-card stagger-item">
+            <div class="burger-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&q=80"
+                alt="Tasty Spicy Burger mit Jalapeños"
+                loading="lazy"
+              >
+            </div>
+            <div class="burger-card__content">
+              <h3 class="burger-card__name">Tasty Spicy</h3>
+              <p class="burger-card__description">
+                Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Jalapeños, Cheddar, Chili-Mayo
+              </p>
+              <div class="burger-card__footer">
+                <span class="burger-card__price">24,90 CHF</span>
+                <div class="burger-card__tags">
+                  <span class="tag tag--spicy">Scharf</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section--dark experience">
+      <div class="container">
+        <div class="experience__grid">
+          <div class="experience__content fade-in">
+            <span class="experience__label">Das TastyBites Erlebnis</span>
+            <h2>Was unsere Burger besonders macht</h2>
+            <p class="experience__text">
+              Bei TastyBites glauben wir an die Kunst des perfekten Burgers.
+              Jeder Patty wird frisch vor deinen Augen smashed, jede Sauce
+              hausgemacht, jede Zutat sorgfältig ausgewählt.
+            </p>
+
+            <div class="experience__features">
+              <div class="feature">
+                <div class="feature__icon"><span class="icon-dot"></span></div>
+                <div class="feature__content">
+                  <h4>Smashed Perfection</h4>
+                  <p>Dünn gepresst für maximale Kruste und Geschmack</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__icon"><span class="icon-dot"></span></div>
+                <div class="feature__content">
+                  <h4>Hausgemachte Saucen</h4>
+                  <p>Unsere legendäre Tasty Sauce nach Geheimrezept</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__icon"><span class="icon-dot"></span></div>
+                <div class="feature__content">
+                  <h4>Frische Zutaten</h4>
+                  <p>Täglich frisch, regional wo möglich</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience__visual fade-in">
+            <div class="experience__image">
+              <video
+                      src="Homepage_Burgervideo.mp4"
+                      autoplay
+                      loop
+                      muted
+                      playsinline
+              >
+                <track
+                        kind="subtitles"
+                        src="Homepage_Burgervideo.vtt"
+                        srclang="de"
+                        label="Deutsch"
+                />
+                <track
+                        kind="descriptions"
+                        src="Homepage_Burgervideo_desc.vtt"
+                        srclang="de"
+                        label="Audiodeskription"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="section menu" id="menu-preview">
+      <div class="container">
+        <header class="menu__header fade-in">
+          <span class="menu__label">Speisekarte</span>
+          <h2>Alle Burger Menüs</h2>
+          <p>Alle Menüs werden mit Pommes Frites und hausgemachter Sauce serviert.</p>
+        </header>
+
+        <div class="menu__grid">
+          <article class="menu-item stagger-item">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Habibi Burger</h3>
+              <p class="menu-item__description">Smashed Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Cheddar, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">24,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Juicy Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, grillierte Zwiebeln, Bacon, Röstzwiebeln, 2× Cheddar, Tasty-Mayo</p>
+            </div>
+            <span class="menu-item__price">26,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">
+                Tasty Veggie Burger
+                <span class="menu-item__badge menu-item__badge--veggie" aria-label="vegetarisch"></span>
+              </h3>
+              <p class="menu-item__description">Vegi-Patty, Salat, Tomaten, Zwiebeln, Gewürzgurken, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">21,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Cheese Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Zwiebeln, Gewürzgurken, Cheddar, Ketchup, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">23,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Bacon Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Zwiebeln, Gewürzgurken, Cheddar, Bacon, Röstzwiebeln, Ketchup, BBQ-Sauce</p>
+            </div>
+            <span class="menu-item__price">25,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">Tasty Classic Burger</h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Gewürzgurken, Tasty Sauce</p>
+            </div>
+            <span class="menu-item__price">24,90 CHF</span>
+          </article>
+
+          <article class="menu-item stagger-item">
+            <div class="menu-item__info">
+              <h3 class="menu-item__name">
+                Tasty Spicy Burger
+                <span class="menu-item__badge menu-item__badge--spicy" aria-label="scharf"></span>
+              </h3>
+              <p class="menu-item__description">Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Jalapeños, Cheddar, Chili-Mayo, Chilisauce</p>
+            </div>
+            <span class="menu-item__price">24,90 CHF</span>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-lg);">
+          <a href="menu.html" class="btn btn--primary">Vollständige Karte ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section section--dark location">
+      <div class="container">
+        <div class="location__grid">
+          <div class="location__content fade-in">
+            <span class="location__label">Besuch uns</span>
+            <h2>Standort & Öffnungszeiten</h2>
+
+            <div class="location__info">
+              <div class="location__block">
+                <h4>Adresse</h4>
+                <p>TastyBites Bern</p>
+                <p>Murtenstrasse 66</p>
+                <p>3008 Bern</p>
+                <p><a href="tel:+41312221234">+41 31 398 11 22</a></p>
+              </div>
+
+              <div class="location__block">
+                <h4>Öffnungszeiten</h4>
+                <ul class="hours-list">
+                  <li>
+                    <span class="day">Montag</span>
+                    <span class="time">Ruhetag</span>
+                  </li>
+                  <li>
+                    <span class="day">Dienstag - Freitag</span>
+                    <span class="time">11:00 - 14:00 | 17:00 - 22:00</span>
+                  </li>
+                  <li>
+                    <span class="day">Samstag</span>
+                    <span class="time">11:00 - 22:00</span>
+                  </li>
+                  <li>
+                    <span class="day">Sonntag</span>
+                    <span class="time">17:00 - 21:00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__map fade-in">
+            <iframe
+              src="https://maps.google.com/maps?q=Murtenstrasse+66,+3008+Bern,+Switzerland&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="TastyBites Standort auf Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2 class="cta__title fade-in">Hunger?</h2>
+        <p class="cta__subtitle fade-in">
+          Gönn dir einen unserer legendären Smashed Burgers.
+          Reserviere einen Tisch oder komm einfach vorbei!
+        </p>
+        <div class="cta__buttons fade-in">
+          <a href="contact.html" class="btn btn--primary btn--large">Tisch reservieren</a>
+          <a href="tel:+41312221234" class="btn btn--secondary btn--large">Anrufen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Tasty<span>Bites</span></div>
+          <p class="footer__tagline">Smashed to Perfection – Burger wie sie sein sollten.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/tastybites.bern" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/tastybites.bern" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Speisekarte</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Kontakt</h4>
+          <ul class="footer__links">
+            <li>Murtenstrasse 66</li>
+            <li>3008 Bern</li>
+            <li><a href="tel:+41312221234">+41 31 398 11 22</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Öffnungszeiten</h4>
+          <ul class="footer__links">
+            <li>Mo: Ruhetag</li>
+            <li>Di-Fr: 11:00-14:00</li>
+            <li>Di-Fr: 17:00-22:00</li>
+            <li>Sa: 11:00-22:00</li>
+            <li>So: 17:00-21:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear"></span> TastyBites Bern. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="impressum.html#datenschutz">Datenschutz</a>
+        </div>
+        <p class="footer__credit">Made by <a href="https://recursiv.ch" target="_blank" rel="noopener">Recursiv</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
